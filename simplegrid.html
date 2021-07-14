@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Pizza</title>
+    <link rel="stylesheet" href="simplegrid.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color:linen;
+            margin: 0;
+        }
+
+    .container {
+    display: grid;
+    grid-template-columns: repeat(3,1f);
+    padding: 50px 20px;
+    grid-column-gap:20px;
+    grid-row-gap:30px;
+   
+        }
+       .box {
+            background-color: coral;
+            width: 100%
+            
+            
+        }
+    .row img{
+       
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    /*align-items: center;*/
+    cursor: pointer;
+    transition: 0.5s ease;
+    border-radius: 2em;
+    padding: 1em;
+   /* border: 1em;*/
+}
+
+.row img:hover {
+    transform: scale(1.04);
+}
+.row h4 {
+    padding: 5px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    background-color: lightpink;
+    border-radius: 1em;
+}
+.col-4{ 
+    background-color: darkgrey;
+    border: 1em;
+    text-align: center;
+    border-radius: 1.2em;
+    
+   
+}
+h6{
+    text-align: center;
+}
+
+h3,h2 {
+    text-align: center;
+}
+.col-4 > div{
+    text-align: center;
+}
+.col-12 > div,h2{
+    margin: 0;
+    padding: 0;
+ 
+    }
+  
+    .col-4 > div,h3{
+        margin: 0;
+        padding: 0;
+
+    }
+
+.contact_us {
+    text-align: center;
+    /*background-color: pink;*/
+    border-radius: 1em;
+    margin: 0;
+    padding: 0;
+}
+.col-12 > div h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+</style>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <h1>Perfect-pizza</h1>
+            </div>
+            <div class="box">
+          <div class="col-4">
+            <h2>Small Pizza</h2>
+            <img src="hut.png" width="125" class="center">
+            <h3>R49.00</h3>
+            <div>
+                bread dough topped with combination of olive oil,
+                oregano,mozzarella
+                and many other ingredients
+            </div>
+          </div>
+          </div>
+          <div class="box">
+          <div class="col-4">
+            <h2>Medium Pizza</h2>
+            <img src="hut.png" width="125" class="center">
+            <h3>R89.00</h3>
+            <div>
+                bread dough topped with combination of olive oil,
+                oregano,mozzarella
+                and many other ingredients
+            </div>
+          </div>
+          </div>
+        <div class="box">
+          <div class="col-4">
+            <h2>Large Pizza</h2>
+            <img src="hut.png" width="125" class="center">
+            <h3>R129.00</h3>
+            <div>
+                bread dough topped with combination of olive oil,
+                oregano,mozzarella
+                and many other ingredients
+            </div>
+          </div>
+        </div>
+
+        
+      
+    </div>
+    </div>
+    
+     
+    <div class="row">
+        <div class="col-12">
+        <div class="contact_us">
+          <h2> Contact details</h2>
+            <div>Contact us at: 0761890918 info@perfectpizza.com</div>
+        </div>
+        </div>
+        </div>
+      <div class="row">
+          <div class="col-12">
+              <div class="footer">
+                  <h6>Viollah Mudau &copy2021 </h2>
+              </div>
+          </div>
+      </div>
+    
+    </body>
+
+
+
+</html>
